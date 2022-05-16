@@ -13,9 +13,14 @@ const Keytile = ({position}) => {
       keyArray.push(keyboard[n][2]);
     }
   }
+  function keytileClick () {
+    window.dispatchEvent(new KeyboardEvent('keydown', {
+      'key': `${position}`
+    }))
+  };
   const keyColor = colorKeyboard[keyArray[0]][keyArray[1]];
   return (
-    <div className="Keytile" id="Keytile" style={{background: `${keyColor}`}}>
+    <div className="Keytile" style={{background: `${keyColor}`}} onClick={keytileClick}>
       {position}
     </div>
   )

@@ -4,7 +4,16 @@ import Keytile from '../Keytile/Keytile.js';
 import './Keyboard.css';
 
 const Keyboard = () => {
-
+  function enterOnClick () {
+    window.dispatchEvent(new KeyboardEvent('keydown', {
+      'key': 'Enter'
+    }))
+  };
+  function backspaceOnClick () {
+    window.dispatchEvent(new KeyboardEvent('keydown', {
+      'key': 'Backspace'
+    }))
+  };
   return (
   <div className="Keyboard">
     <div className="gap"></div>
@@ -34,6 +43,7 @@ const Keyboard = () => {
       </div>
     <div className="gap"></div>
     <div className="keyRow" id="keyRow3">
+      <div className="LongTile" onClick={enterOnClick}>Enter</div>
       <Keytile position={"Z"} />
       <Keytile position={"X"} />
       <Keytile position={"C"} />
@@ -41,6 +51,7 @@ const Keyboard = () => {
       <Keytile position={"B"} />
       <Keytile position={"N"} />
       <Keytile position={"M"} />
+      <div className="LongTile" onClick={backspaceOnClick}>Backspace</div>
       </div>
   </div>
 )
