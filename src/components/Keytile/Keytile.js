@@ -15,7 +15,7 @@ const Keytile = ({position}) => {
   }
   function keytileClick () {
     window.dispatchEvent(new KeyboardEvent('keydown', {
-      'key': `${position}`
+      'key': `${position.toLowerCase()}`
     }))
   };
   const keyColor = colorKeyboard[keyArray[0]][keyArray[1]];
