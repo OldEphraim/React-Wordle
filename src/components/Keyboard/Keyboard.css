@@ -22,6 +22,7 @@
   .LongTile {
     width: 95px;
     height: 30px;
+    line-height: 30px;
     font-size: 12.5px;
     float: left;
     border: 1px solid white;
