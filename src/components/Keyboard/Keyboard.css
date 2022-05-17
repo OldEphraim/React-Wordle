@@ -41,7 +41,8 @@
   position: relative;
   width: 520px;
   margin-top: 260px;
-  margin-left: 29.3%;
+  margin-left: auto;
+  margin-right: auto;
 }
 }
 
