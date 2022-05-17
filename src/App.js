@@ -67,7 +67,7 @@ const App = () => {
     }
   } else if (String(key).toLowerCase() !== String(key).toUpperCase() && String(key).length === 1 && currentTile < 6) {
       const newBoard = [...board];
-      newBoard[currentRow][currentTile] = String(key);
+      newBoard[currentRow][currentTile] = String(key).toLowerCase();
       setBoard(newBoard);
       setCurrentTile(currentTile + 1);
     } else if (String(key) === "Enter" && currentTile === 6) {
