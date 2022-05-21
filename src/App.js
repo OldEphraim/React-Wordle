@@ -124,7 +124,7 @@ const App = () => {
     <>
     <Header />
     <StartingPopup />
-    <AppContext.Provider value={{board, setBoard, colorBoard, setColorBoard, showExplainingPopup, setShowExplainingPopup, showWinningPopup, setShowWinningPopup, showLosingPopup, setShowLosingPopup, keyboard, colorKeyboard, setColorKeyboard}}>
+    <AppContext.Provider value={{word, setWord, board, setBoard, colorBoard, setColorBoard, showExplainingPopup, setShowExplainingPopup, showWinningPopup, setShowWinningPopup, showLosingPopup, setShowLosingPopup, keyboard, colorKeyboard, setColorKeyboard}}>
     <ExplainingPopup />
     <WinningPopup />
     <LosingPopup />

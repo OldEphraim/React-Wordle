@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Arimo&display=swap');
 
 .popup {
-  width: 100%;
+  width: 95%;
   background-color: black;
   color: white;
   z-index: 1;
